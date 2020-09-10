@@ -23,10 +23,4 @@ public class CrmApplication {
         return new Md5Encoder();
     }
 
-    @Bean
-    public TokenStore tokenStore(DataSource dataSource){
-        return new JdbcTokenStore(dataSource);
-    }
-
-
 }
